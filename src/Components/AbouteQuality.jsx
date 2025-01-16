@@ -2,11 +2,11 @@ import React from 'react'
 import { useTranslation } from 'react-i18next'
 
 
-export default function AbouteQuality({ img }) {
+export default function AbouteQuality({ img , bg }) {
     const { t } = useTranslation();
     return (
         <div className='container'>
-            <div className=' m-auto mt-[100px] max-xl:mt-[300px] max-md:mt-[250px] max-sm:mt-[120px] hover bg-[rgb(70,67,81)] mb-[100px]  rounded-[30px]'>
+            <div className={` ${bg} m-auto mt-[100px] max-xl:mt-[300px] max-md:mt-[250px] max-sm:mt-[120px] hover  mb-[100px]  rounded-[30px]`}>
                 <div className='p-[70px] max-md:p-[20px] relative flex justify-between max-md:flex-col items-center gap-[30px] max-xl:pt-[300px] max-lg:pt-[200px] max-md:pt-[250px] max-sm:pt-[160px]'>
                     <div className='max-md:text-center'>
                         <p className='text-[90px] font-[800px] m-[0_0_20px] max-sm:m-[0px] text-[#fff] max-lg:text-[50px] max-sm:text-[25px]'>100%</p>

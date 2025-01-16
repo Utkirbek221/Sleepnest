@@ -24,7 +24,7 @@
     "text": "Material sifati",
     "text2": "Ekologik Toza Uyqu Mahsulotlari",
     "title": "ko'p yillar davomida butun dunyoda foydalanish uchun paxta matolarini ishlab chiqaradigan kompaniya bo'lib kelgan",
-    "btn":"To'plam"
+    "btn": "To'plam"
   },
   "winterCollection": {
     "fasil": "Qish",
@@ -32,5 +32,41 @@
     "fasil3": "Yuz",
     "text": " kolleksiyasi",
     "title": "Ekologik Toza Uyqu Mahsulotlari"
+  },
+  "dataWinter": {
+    "text": "Kvadratchalar",
+    "text2": "Ikat",
+    "text3": "Davralar",
+    "text4": "Geometriya ko'k",
+    "text5": "Tropik barglar",
+    "text6": "Bambi",
+    "text7": "Vizantiya",
+    "text8": "Kechki bog'",
+    "text9": "Pat Markiz",
+    "text10": "Lavanda atirgullari"
+  },
+  "dataAutumn": {
+    "text": "Safari",
+    "text2": "Ko'p rangli ametist",
+    "text3": "Shivali bezak",
+    "text4": "Zumrad (AB)",
+    "text5": "Malaxit qutisi",
+    "text6": "Bahorning hidlari",
+    "text7": "Kuzgi barglar tushishi (AB)",
+    "text8": "Moviy shabada",
+    "text9": "Moviy suv",
+    "text10": "Plaid"
+  },
+  "dataSummer": {
+    "text": "Vintage uslubi",
+    "text2": "Tebranayotgan karahindiba",
+    "text3": "Fransuz Riviera",
+    "text4": "Qo'y Dolli",
+    "text5": "Alp tog'lari o'simliklari",
+    "text6": "Ilhomlantiruvchi",
+    "text7": "Yashil lotus",
+    "text8": "Tog'li makkajo'xori",
+    "text9": "Sakura filiali",
+    "text10": "Zaytun novdasi"
   }
 }
