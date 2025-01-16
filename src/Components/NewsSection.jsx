@@ -1,9 +1,13 @@
 import React from "react";
+import img from "../IMG/NewsImg.png";
+import img2 from "../IMG/newsImg2.png";
+import img3 from "../IMG/NewsImg3.png";
+
 
 const NewsSection = () => {
   const newsData = [
     {
-      image: "", // Rasm URL'ini almashtiring
+      image: img,
       date: "10/05/2024",
       author: "admin tomonidan",
       title: "Qanday qilib mukammal gadjetlarni tanlash mumkin",
@@ -11,7 +15,7 @@ const NewsSection = () => {
         "Go'zal vodiyning bug' bilan to'lganda va meridian quyoshi tepaga urilganda...",
     },
     {
-      image: "./",
+      image: img2,
       date: "10/05/2024",
       author: "admin tomonidan",
       title: "Zamonaviy texnologiyalardan qanday foydalanish kerak",
@@ -19,7 +23,7 @@ const NewsSection = () => {
         "Texnologiyalar hayotimizni qanday o'zgartirishi haqida qiziqarli hikoyalar...",
     },
     {
-      image: "./",
+      image: img3,
       date: "10/05/2024",
       author: "admin tomonidan",
       title: "Kreativ g'oyalarni amalga oshirish yo'llari",
@@ -29,19 +33,19 @@ const NewsSection = () => {
   ];
 
   return (
-    <section className="py-12">
-      <div className="container mx-auto px-4">
+    <section className="py-12 container">
+      <div className=" mx-auto">
         <h2 className="text-3xl font-bold text-gray-800 text-center mb-4">
           Yangiliklar
         </h2>
         <p className="text-gray-500 text-center mb-8">
           Ekologik Toza Uyqu Mahsulotlari
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20">
           {newsData.map((news, index) => (
             <div
               key={index}
-              className="bg-white shadow-md rounded-lg overflow-hidden"
+              className="bg-white rounded-lg overflow-hidden"
             >
               <img
                 src={news.image}
