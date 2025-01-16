@@ -1,3 +1,46 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Unbounded", serif;
+}
+
+.gradient {
+  animation: gradient 3s infinite;
+}
+.hover:hover {
+  box-shadow: 10px 10px 20px #fa02024d, 0 -10px 20px #ff000080;
+}
+
+@media screen and (max-width: 767px) {
+  .bg {
+    background-image: url("../src/IMG/mainSpalniy.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+@keyframes gradient {
+  0% {
+    background-color: #ecdabf;
+  }
+  25% {
+    background-color: #dcba94;
+  }
+  50% {
+    background-color: #eabb74;
+  }
+  75% {
+    background-color: #dcba94;
+  }
+  100% {
+    background-color: #ecdabf;
+  }
+}

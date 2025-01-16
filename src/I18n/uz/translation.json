@@ -1,0 +1,36 @@
+{
+  "header": {
+    "text": "Bosh sahifa",
+    "text2": "To'plam",
+    "text3": "Biz haqimizda",
+    "text4": "Kontaktlar"
+  },
+  "main": {
+    "text": "Ekologik",
+    "text2": "Toza Uyqu",
+    "text3": "Mahsulotlari"
+  },
+  "aboute": {
+    "text": "Yetkazib berish bepul",
+    "title": "Barcha buyurtmalar uchun bepul yetkazib berish",
+    "text2": "Qaytish kafolati",
+    "title2": "30 kunlik pulni qaytarish",
+    "text3": "24/7 onlayn qo'llab-quvvatlash",
+    "title3": "24/7 texnik yordam",
+    "text4": "Xavfsiz to'lov",
+    "title4": "Barcha to'lov usullari qabul qilinadi"
+  },
+  "abouteQuality": {
+    "text": "Material sifati",
+    "text2": "Ekologik Toza Uyqu Mahsulotlari",
+    "title": "ko'p yillar davomida butun dunyoda foydalanish uchun paxta matolarini ishlab chiqaradigan kompaniya bo'lib kelgan",
+    "btn":"To'plam"
+  },
+  "winterCollection": {
+    "fasil": "Qish",
+    "fasil2": "Kuz",
+    "fasil3": "Yuz",
+    "text": " kolleksiyasi",
+    "title": "Ekologik Toza Uyqu Mahsulotlari"
+  }
+}

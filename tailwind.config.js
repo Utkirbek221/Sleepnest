@@ -6,9 +6,7 @@ module.exports = {
     container: {
       center: true,
       padding: {
-        DEFAULT: "15px",
-        md:"30px",
-        lg: "60px",
+        DEFAULT: "20px",
 
       },
       // screens: {
@@ -45,11 +43,11 @@ module.exports = {
             maxWidth: '100%',
           },
           '@screen xl': {
-            maxWidth: '1380px',
+            maxWidth: '100%',
           },
-          // '@screen 2xl': {
-          //   maxWidth: '1440px',
-          // },
+          '@screen 2xl': {
+            maxWidth: '1450px',
+          },
         }
       })
     }
