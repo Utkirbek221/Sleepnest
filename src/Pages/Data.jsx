@@ -6,7 +6,7 @@ const useAllItems = () => {
     return [
         {
             id: 1,
-            img: "../src/IMG/QishImg.jpg",
+            img: require("../src/IMG/QishImg.jpg"),
             text: t("dataWinter.text"),
             season: "winter",
         },
