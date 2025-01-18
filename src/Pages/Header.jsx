@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import logo from "../IMG/HeaderLogo.png"
 import { useTranslation } from 'react-i18next';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { FaHeart } from 'react-icons/fa';
 import { RiMenu2Line } from 'react-icons/ri';
 import { IoClose } from 'react-icons/io5';
@@ -12,6 +12,9 @@ export default function Header() {
 
   const [isOpen, setIsOpen] = useState(false);
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
@@ -34,15 +37,31 @@ export default function Header() {
     <>
       <div className='z-20 bg-[#fff] fixed top-0 left-0 right-0 shadow-[0px_2px_4px_0px_rgba(0,0,0,0.25)]'>
         <div className='flex justify-between items-center container pb-[10px] pt-[10px]  '>
-          <div className='w-[180px] h-[59px] max-sm:w-[150px] max-sm:h-[45px]'>
+          <Link onClick={scrollToTop} to={"/"} className='w-[180px] h-[59px] max-sm:w-[150px] max-sm:h-[45px]'>
             <img src={logo} alt="" />
-          </div>
+          </Link>
           <div className='flex items-center justify-center gap-[20px] max-lg:gap-[10px]'>
             <div className='max-md:hidden text-[#00000098] flex gap-[30px] max-lg:gap-[15px] text-[20px] font-[300] max-lg:text-[16px]'>
-              <Link className='' to="/">{t("header.text")}</Link>
-              <Link className='' to="">{t("header.text2")}</Link>
-              <Link className='' to="">{t("header.text3")}</Link>
-              <Link className='' to="">{t("header.text4")}</Link>
+              <NavLink onClick={scrollToTop} className={({ isActive }) =>
+                isActive
+                  ? "text-[#a17f4a]"
+                  : "text-gray-700 hover:text-[#a17f4a]"
+              } to={"/"}>{t("header.text")}</NavLink>
+              <NavLink onClick={scrollToTop} className={({ isActive }) =>
+                isActive
+                  ? "text-[#a17f4a]"
+                  : "text-gray-700 hover:text-[#a17f4a]"
+              } to={"/collection"}>{t("header.text2")}</NavLink>
+              <NavLink onClick={scrollToTop} className={({ isActive }) =>
+                isActive
+                  ? "text-[#a17f4a]"
+                  : "text-gray-700 hover:text-[#a17f4a]"
+              } to={"/aboutus"}>{t("header.text3")}</NavLink>
+              <NavLink onClick={scrollToTop} className={({ isActive }) =>
+                isActive
+                  ? "text-[#a17f4a]"
+                  : "text-gray-700 hover:text-[#a17f4a]"
+              } to={"/contacts"}>{t("header.text4")}</NavLink>
             </div>
             <div className='cursor-pointer max-md:hidden relative'>
               <div>
@@ -70,10 +89,26 @@ export default function Header() {
             <IoClose onClick={toggleMenu} className='cursor-pointer absolute top-[20px] right-[20px] text-[30px]' />
             <div>
               <div className=' text-[#00000098] flex flex-col text-center gap-[30px] text-[20px] font-[300] mt-[100px]'>
-                <Link className='' to="/">{t("header.text")}</Link>
-                <Link className='' to="">{t("header.text2")}</Link>
-                <Link className='' to="">{t("header.text3")}</Link>
-                <Link className='' to="">{t("header.text4")}</Link>
+                <NavLink onClick={() => { scrollToTop(); toggleMenu(); }} className={({ isActive }) =>
+                  isActive
+                    ? "text-[#a17f4a]"
+                    : "text-gray-700 hover:text-[#a17f4a]"
+                } to={"/"}>{t("header.text")}</NavLink>
+                <NavLink onClick={() => { scrollToTop(); toggleMenu(); }} className={({ isActive }) =>
+                  isActive
+                    ? "text-[#a17f4a]"
+                    : "text-gray-700 hover:text-[#a17f4a]"
+                } to={"/collection"}>{t("header.text2")}</NavLink>
+                <NavLink onClick={() => { scrollToTop(); toggleMenu(); }} className={({ isActive }) =>
+                  isActive
+                    ? "text-[#a17f4a]"
+                    : "text-gray-700 hover:text-[#a17f4a]"
+                } to={"/aboutus"}>{t("header.text3")}</NavLink>
+                <NavLink onClick={() => { scrollToTop(); toggleMenu(); }} className={({ isActive }) =>
+                  isActive
+                    ? "text-[#a17f4a]"
+                    : "text-gray-700 hover:text-[#a17f4a]"
+                } to={"/contacts"}>{t("header.text4")}</NavLink>
               </div>
               <div className='cursor-pointer relative  flex justify-center items-center mt-[30px]'>
                 <div>

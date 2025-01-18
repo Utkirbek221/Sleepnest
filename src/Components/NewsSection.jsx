@@ -35,15 +35,15 @@ const NewsSection = () => {
   ];
 
   return (
-    <section className="py-32 container">
+    <section className="pt-32 pb-32 max-md:pb-12 max-md:pt-10 container">
       <div className=" mx-auto">
-        <h2 className="text-3xl font-bold text-gray-800 text-center mb-7">
+        <h2 className="text-3xl font-bold text-gray-800 text-center mb-7 max-md:mb-3">
           {t("news.text")}
         </h2>
-        <p className="text-gray-500 text-center mb-[80px]">
+        <p className="text-gray-500 text-center mb-[80px] max-md:mb-10">
           {t("news.text2")}
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20 max-md:gap-5">
           {newsData.map((news, index) => (
             <div
               key={index}

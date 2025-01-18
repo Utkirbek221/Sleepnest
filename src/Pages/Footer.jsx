@@ -10,7 +10,7 @@ const Footer = () => {
   };
   return (
     <footer className="bg-white text-gray-700 pt-8">
-      <div className="container grid grid-cols-4 max-md:grid-cols-1 gap-8 items-start">
+      <div className="container grid grid-cols-4 max-md:grid-cols-2 max-sm:grid-cols-1 gap-8 items-start">
         <div>
           <Link to="/" onClick={scrollToTop} className="flex items-center mb-4">
             <img src={img} alt="" className="w-full h-auto" />
