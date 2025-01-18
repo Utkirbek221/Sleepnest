@@ -126,5 +126,39 @@
     "pls3": "Sizning xabaringiz bo'lsa yozing",
     "text2": "Buxoro, st. Alpomish 80.",
     "btn": "Yuborish"
+  },
+  "fasil": {
+    "winter": "Qish",
+    "spring": "Kuz",
+    "summer": "Yoz"
+  },
+  "infoItem": {
+    "td": "Material:",
+    "td2": "100% paxta flanel",
+    "td3": "Yostiq kiyimi:",
+    "td4": "50x70 sm (2 dona)",
+    "td5": "Choyshab:",
+    "td6": "260×280 sm (1 dona)",
+    "td7": "Ko'rpa-to'shak:",
+    "td8": "160x220 sm (2 dona)",
+    "td9": "Hajmi:",
+    "td10": "Maxsus o'lcham",
+    "td11": "Ishlab chiqaruvchi:",
+    "td12": "Ekologik Toza Uyqu Mahsulotlat",
+    "text2": "Kategoriya:",
+    "text3": "kolleksiyasi"
+  },
+  "inforegistor" :{
+    "text": "Mahsulot haqida sharhlar",
+    "text2": "Hozircha sharhlar yo'q.",
+    "text3": "O'z sharhingizni qoldiring",
+    "input": "Sizning reytingingiz:",
+    "input2": "Ism *",
+    "input3": "Elektron pochta *",
+    "input4": "Sizning sharhingiz *",
+    "btn": "Sharhni yuborish"
+  },
+  "infoother": {
+    "text":"Shunga o'xshash mahsulotlar"
   }
 }

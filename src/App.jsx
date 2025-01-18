@@ -5,6 +5,8 @@ import ErrorPage from "./Components/ErrorPage";
 import Contacts from "./Pages/Contacts";
 import AboutUs from "./Pages/AboutUs";
 import CollectionBig from "./Pages/CollectionBig";
+import Saved from "./Pages/Saved";
+import InfoItem from "./Pages/InfoItem";
 
 function App() {
   const router = createBrowserRouter([
@@ -28,7 +30,15 @@ function App() {
         {
           path: "/contacts",
           element: <Contacts />,
-        }
+        },
+        {
+          path: "/saved",
+          element: <Saved />,
+        },
+        {
+          path: "/infoitem/:id",
+          element: <InfoItem />,
+        },
       ]
     }
   ]);

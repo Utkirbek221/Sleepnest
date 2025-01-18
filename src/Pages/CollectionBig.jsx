@@ -3,13 +3,16 @@ import useAllItems from './Data';
 import { FaRegHeart } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
 import { IoMdSearch } from 'react-icons/io';
+import { NavLink } from 'react-router-dom';
 
 export default function CollectionBig() {
   const { t } = useTranslation();
   const allItems = useAllItems();
   const [searchTerm, setSearchTerm] = useState('');
   const [filterSeason, setFilterSeason] = useState('all');
-
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
   const filteredItems = allItems.filter(item => {
     const matchesSearch = item.text.toLowerCase().includes(searchTerm.toLowerCase());
     const matchesSeason = filterSeason === 'all' || item.season === filterSeason;
@@ -82,11 +85,14 @@ export default function CollectionBig() {
           {filteredItems.map((item) => (
             <div key={item.id} className="">
               <div className="cursor-pointer relative">
-                <img
-                  src={item.img}
-                  alt=""
-                  className="w-full h-auto rounded-[15px]"
-                />
+                <NavLink to={`/infoitem/${item.id}`}>
+                  <img
+                    onClick={scrollToTop}
+                    src={item.img}
+                    alt=""
+                    className="w-full h-auto rounded-[15px]"
+                  />
+                </NavLink>
                 <button
                   className="absolute top-[10px] right-[10px] bg-[#d4d4d4] w-[40px] h-[40px] max-md:w-[30px] max-md:h-[30px] rounded-full flex justify-center items-center"
                 >

@@ -64,9 +64,9 @@ export default function Header() {
               } to={"/contacts"}>{t("header.text4")}</NavLink>
             </div>
             <div className='cursor-pointer max-md:hidden relative'>
-              <div>
+              <NavLink to={"/saved"}>
                 <FaHeart className='text-[1.5rem] text-[red] max-lg:text-[1rem]' />
-              </div>
+              </NavLink>
               <div className='bg-[black] absolute top-[-8px] left-[15px] text-[#fff] w-[15px] h-[15px] flex justify-center items-center text-[10px] rounded-full'>
                 0
               </div>
